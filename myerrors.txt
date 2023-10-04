@@ -1,0 +1,58 @@
+ERROR LIST
+
+
+6.) delete-prescription/<int:pk>/
+
+DoesNotExist at /delete-prescription/3/
+Prescription matching query does not exist.
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/delete-prescription/3/
+Django Version:	4.1.10
+Exception Type:	DoesNotExist
+Exception Value:	
+Prescription matching query does not exist.
+Exception Location:	C:\Users\Pc\AppData\Roaming\Python\Python39\site-packages\django\db\models\query.py, line 650, in get
+Raised during:	hospital.views.delete_prescription
+
+7.) delete-report/<int:pk>/
+
+DoesNotExist at /delete-report/1/
+Report matching query does not exist.
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/delete-report/1/
+Django Version:	4.1.10
+Exception Type:	DoesNotExist
+Exception Value:	
+Report matching query does not exist.
+Exception Location:	C:\Users\Pc\AppData\Roaming\Python\Python39\site-packages\django\db\models\query.py, line 650, in get
+Raised during:	hospital.views.delete_report
+
+8.) appointments/
+
+NoReverseMatch at /appointments/
+Reverse for 'doctor-profile' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['doctor/doctor\\-profile/(?P<pk>[0-9]+)/\\Z']
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/appointments/
+Django Version:	4.1.10
+Exception Type:	NoReverseMatch
+Exception Value:	
+Reverse for 'doctor-profile' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['doctor/doctor\\-profile/(?P<pk>[0-9]+)/\\Z']
+Exception Location:	C:\Users\Pc\AppData\Roaming\Python\Python39\site-packages\django\urls\resolvers.py, line 828, in _reverse_with_prefix
+Raised during:	hospital.views.appointments
+
+9.) edit-prescription/
+
+TemplateDoesNotExist at /edit-prescription/
+edit-prescription.html
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/edit-prescription/
+Django Version:	4.1.10
+Exception Type:	TemplateDoesNotExist
+Exception Value:	
+edit-prescription.html
+Exception Location:	C:\Users\Pc\AppData\Roaming\Python\Python39\site-packages\django\template\loader.py, line 19, in get_template
+Raised during:	hospital.views.edit_prescription
+
+10.) basically one more problem while booking an appointment is when we try to write a message to the doctor, smtp authentication error, this error can be solved anyways 
+
+11.) solved a problem of accessing doctor profile from the patient-dashboard, in the patient-dashboard html file

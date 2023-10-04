@@ -1,0 +1,23 @@
+
+1.) HOSPITAL APPS
+ 
+	1.) hospital_home -----> home_hospitals       -----> most problem in html files
+	2.) CustomUserCreationForm  ----> PatientUserCreationForm    ---> problem solved
+	3.) Deleted forms.py and decalred and defined the form classes in the views.py file
+	4.) generate_random_string   -----> random_string
+	5.) 
+
+
+@csrf_exempt
+@login_required(login_url="doctor-login")
+def appointments(request):
+    if request.user.is_doctor:
+        return render(request, 'appointments.html')
+    else:
+        return redirect("doctor-login")
+
+
+return render(request, 'appointments.html')
+
+6.)  the report submission functionality is not working fine for now
+ 7.) chat.html  and the chat/ url is for the chat interface of the user,   chat-home
